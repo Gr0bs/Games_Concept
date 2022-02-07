@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://unit.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Node2D.gd" type="Script" id=2]
+[ext_resource path="res://SelectDraw.gd" type="Script" id=3]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="unit" parent="." instance=ExtResource( 1 )]
+position = Vector2( 313.72, 202.847 )
+
+[node name="unit2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 418.49, 235.883 )
+
+[node name="unit3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 312.776, 276.469 )
+
+[node name="SelectDraw" type="Node2D" parent="."]
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
